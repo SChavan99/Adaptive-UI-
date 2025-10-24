@@ -49,19 +49,14 @@ You should see the interface with the accessibility toolbar and adaptive feature
 
 
 ### Testing the System
-
-Type text into the Additional Notes field and click Simplify — the text will be processed through the backend API.
-
-Open browser DevTools → Network → WS — you’ll see an active /socket.io connection.
-
-Use the Debug Panel buttons:
-
-Simulate ADHD-like: triggers focus and distraction-free UI adjustments.
-
-Simulate Dyslexia-like: triggers font and readability changes.
-
-The UI adapts automatically based on the simulated user behavior.
-
+```
+1. Type text into the Additional Notes field and click Simplify — the text will be processed through the backend API.
+2. Open browser DevTools → Network → WS — you’ll see an active /socket.io connection.
+3. Use the Debug Panel buttons:
+  #Simulate ADHD-like: triggers focus and distraction-free UI adjustments.
+  #Simulate Dyslexia-like: triggers font and readability changes.
+4. The UI adapts automatically based on the simulated user behavior.
+```
 ### Tech Stack
 | Layer                       | Technology                                         |
 | --------------------------- | -------------------------------------------------- |
@@ -73,7 +68,7 @@ The UI adapts automatically based on the simulated user behavior.
 
 
 ### Project Structure
-
+```
 adaptive-interface/
 ├── backend/
 │   ├── app/
@@ -84,5 +79,5 @@ adaptive-interface/
 │   ├── package.json
 │   └── vite.config.ts
 └── README.md
-
+```
 ---
