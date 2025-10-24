@@ -25,6 +25,7 @@ python -m venv .venv
 
 pip install -r requirements.txt
 uvicorn app.main:asgi --reload --port 8000
+```
 
 ✅ Verify Backend:
 Open http://127.0.0.1:8000/docs
@@ -35,9 +36,11 @@ Open http://127.0.0.1:8000/docs
 Requirements: Node.js 18+ and npm
 
 Open another terminal window:
+```
 cd frontend
 npm install
 npm run dev
+```
 
 # Verify Frontend:
 Go to http://localhost:5173
