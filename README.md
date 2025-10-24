@@ -70,14 +70,38 @@ You should see the interface with the accessibility toolbar and adaptive feature
 ### Project Structure
 ```
 adaptive-interface/
-├── backend/
-│   ├── app/
-│   ├── requirements.txt
-│   └── main.py
-├── frontend/
-│   ├── src/
-│   ├── package.json
-│   └── vite.config.ts
-└── README.md
+├─ README.md
+├─ backend/
+│  ├─ requirements.txt
+│  └─ app/
+│     ├─ main.py
+│     ├─ rules.py
+│     └─ util.py
+└─ frontend/
+   ├─ index.html
+   ├─ package.json
+   ├─ tsconfig.json
+   ├─ vite.config.ts
+   ├─ postcss.config.js
+   ├─ tailwind.config.js
+   └─ src/
+      ├─ main.tsx
+      ├─ App.tsx
+      ├─ styles.css
+      ├─ lib/
+      │  ├─ api.ts
+      │  └─ socket.ts
+      ├─ store/
+      │  └─ adaptiveStore.ts
+      ├─ hooks/
+      │  ├─ useBehaviorTracker.ts
+      │  └─ useAdaptiveRules.ts
+      └─ components/
+         ├─ AccessibilityToolbar.tsx
+         ├─ DistractionFreeOverlay.tsx
+         ├─ CheckoutDemo.tsx
+         ├─ DebugPanel.tsx
+         └─ StatusBar.tsx
+
 ```
 ---
